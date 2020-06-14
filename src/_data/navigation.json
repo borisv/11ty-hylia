@@ -1,17 +1,17 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "11ty-Hylia",
       "url": "/",
       "external": false
     },
     {
       "text": "GitHub",
-      "url": "https://github.com/hankchizljaw/hylia",
+      "url": "https://github.com/borisv/11ty-hylia",
       "external": true
     },
     {
-      "text": "Example Contact Page",
+      "text": "Contact",
       "url": "/contact",
       "external": false
     }
