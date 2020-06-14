@@ -11,13 +11,13 @@
       "external": true
     },
     {
-      "text": "Contact",
-      "url": "/contact",
+      "text": "What?",
+      "url": "/what/index.html",
       "external": false
     },
     {
       "text": "What",
-      "url": "/what"
+      "url": "/what/index.html"
     }
   ]
 }
