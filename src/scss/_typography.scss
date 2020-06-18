@@ -1,11 +1,22 @@
-/* lora-700 - latin */
+/* fabrikat mono 600 - latin */
 @font-face {
-  font-family: 'Lora';
+  font-family: 'fabrikat mono regular';
+  src: url('/fonts/fabrikat_mono_regular.woff2') format('woff2'),
+    url('/fonts/fabrikat_mono_regular.woff') format('woff'),
+    url('/fonts/fabrikat_mono_regular.svg#fabrikat_mono_regular') format('svg');
+  font-weight: 600;
   font-style: normal;
-  font-weight: 700;
   font-display: swap;
-  src: local('Lora Bold'), local('Lora-Bold'),
-    url('/fonts/lora-v13-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'rubik sans regular';
+  src: url('/fonts/rubik_sans_regular.woff2') format('woff2'),
+    url('/fonts/rubik_sans_regular.woff') format('woff'),
+    url('/fonts/rubik_sans_regular.svg#rubik_sans_regular') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -18,12 +29,13 @@ body {
 
 h1,
 h2,
-h3 {
-  @include apply-utility('font', 'serif');
+h3,
+header span {
+  @include apply-utility('font', 'monospace');
 }
 
 h1 {
-  font-size: get-size(700);
+  font-size: get-size(800);
 }
 
 h2 {
@@ -40,10 +52,10 @@ h3 {
   }
 
   h2 {
-    font-size: get-size(800);
+    font-size: get-size(700);
   }
 
   h3 {
-    font-size: get-size(700);
+    font-size: get-size(600);
   }
 }

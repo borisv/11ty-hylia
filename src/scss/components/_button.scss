@@ -1,10 +1,10 @@
 .button {
   display: inline-block;
   border: none;
-  background-color: var(--color-action-bg);
+  background-color: var(--color-theme-button-bg);
   color: var(--color-action-text);
-  padding: get-size(300) get-size('base');
-  line-height: 1;
+  padding: get-size('base') get-size('base');
+  line-height: 0.833;
   margin: 0;
   text-decoration: none;
   cursor: pointer;
@@ -14,7 +14,7 @@
 
 .button:hover,
 .button:focus {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
 }
 
 .button:focus:hover {

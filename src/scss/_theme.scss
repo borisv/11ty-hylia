@@ -6,35 +6,42 @@
 
   // Set theme aliases
   --color-mode: 'light';
-  --color-bg: #{get-color('light')};
+  --color-bg: #{rgba(get-color('light'), 0.83)};
   --color-bg-glare: #{get-color('light')};
   --color-text: #{get-color('dark')};
   --color-text-glare: #{get-color('dark')};
   --color-selection-text: #{get-color('light')};
   --color-selection-bg: #{get-color('dark')};
-  --color-stroke: #{get-color('mid')};
-  --color-action-bg: #{get-color('primary')};
+  --color-stroke: #{get-color('primary')};
+  --color-action-bg: var(--color-theme-primary-glare);
   --color-action-text: #{get-color('light')};
-  --color-theme-primary: #{get-color('primary')};
-  --color-theme-primary-glare: #{get-color('primary-glare')};
+  --color-theme-primary: #{darken(get-color('primary'), 4.3%)};
+  --color-theme-primary-glare: #{darken(get-color('primary-glare'), 5%)};
   --color-theme-highlight: #{get-color('highlight')};
-  --color-theme-highlight-block: #{get-color('highlight')};
+  --color-theme-highlight-block: #{rgba(get-color('primary'), 0.84)};
+  --color-theme-info: #{get-color('primary')};
+  --color-theme-button-bg: #{get-color('primary')};
+  --color-theme-code-bg: #{lighten(get-color('bg-code'), 2.074%)};
+  --color-theme-feature-text: #{get-color('light')};
 }
 
 @include dark-mode() {
   --color-bg: #{get-color('dark')};
   --color-bg-glare: #{get-color('slate')};
-  --color-text: #{get-color('light')};
+  --color-text: #{darken(get-color('light'), 1.44%)};
   --color-selection-text: #{get-color('dark')};
   --color-selection-bg: #{get-color('light')};
-  --color-stroke: #{get-color('slate')};
-  --color-theme-primary: #{lighten(get-color('primary'), 50%)};
-  --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
-  --color-action-bg: var(--color-theme-primary-glare);
+  --color-stroke: #{get-color('primary')};
+  --color-theme-primary: #{lighten(get-color('primary'), 7.43%)};
+  --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 5%)};
+  --color-action-bg: var(--color-theme-highlight);
   --color-action-text: #{get-color('dark')};
-  --color-theme-highlight: #{get-color('highlight')};
-  --color-theme-highlight-block: #{get-color('slate')};
-  --color-theme-feature-text: #{get-color('highlight')};
+  --color-theme-highlight: #{rgba(get-color('slate'), 0.91)};
+  --color-theme-highlight-block: #{rgba(get-color('primary'), 0.91)};
+  --color-theme-info: #{get-color('primary')};
+  --color-theme-button-bg: #{get-color('primary')};
+  --color-theme-code-bg: #{darken(get-color('bg-code'), 2.074%)};
+  --color-theme-feature-text: #{get-color('dark')};
 }
 
 body {

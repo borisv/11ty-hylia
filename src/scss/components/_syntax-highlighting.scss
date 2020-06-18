@@ -1,5 +1,5 @@
 /**
- * a11y-dark theme for JavaScript, CSS, and HTML
+ * dark theme for JavaScript, CSS, and HTML
  * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
  * @author ericwbailey
  */
@@ -8,7 +8,8 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: #f8f8f2;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: 'fabrikat mono regular', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+    monospace;
   text-align: left;
   word-spacing: normal;
   word-break: normal;
@@ -35,11 +36,13 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #d4d0ab;
+  color: #cfcdb4;
+  filter: contrast(1.44);
 }
 
 .token.punctuation {
-  color: #fefefe;
+  color: #f3efef;
+  filter: contrast(1.44);
 }
 
 .token.property,
@@ -47,12 +50,14 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #ffa07a;
+  color: #eea082;
+  filter: contrast(1.44);
 }
 
 .token.boolean,
 .token.number {
-  color: #00e0e0;
+  color: #64c2c2;
+  filter: contrast(1.44);
 }
 
 .token.selector,
@@ -61,7 +66,8 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #abe338;
+  color: #a1be67;
+  filter: contrast(1.44);
 }
 
 .token.operator,
@@ -70,22 +76,26 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: #00e0e0;
+  color: #82d3d3;
+  filter: contrast(1.44);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: #ffd700;
+  color: #dfc847;
+  filter: contrast(1.44);
 }
 
 .token.keyword {
-  color: #00e0e0;
+  color: #6ed6d6;
+  filter: contrast(1.44);
 }
 
 .token.regex,
 .token.important {
-  color: #ffd700;
+  color: #e2ce5e;
+  filter: contrast(1.44);
 }
 
 .token.important,

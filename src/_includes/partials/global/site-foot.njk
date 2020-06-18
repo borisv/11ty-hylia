@@ -2,14 +2,18 @@
   <div class="wrapper">
     <div class="[ site-foot__inner ] [ md:box-flex space-between align-start ]">
       {% if site.shortDesc %}
-        <div>
-          <article class="[ site-foot__details ] [ sf-flow measure-compact ]">
-            <h2 class="font-base text-600">{{ site.name }}</h2>
-            {{ site.shortDesc | markdownFilter | safe }}
-          </article>
-        </div>
+        <div></div>
       {% endif %}
       <div>
+        <article class="[ site-foot__details ] [ sf-flow measure-compact ]">
+          <a href="/" class="[ leading-tight ]">
+            <span class="visually-hidden">{{ site.name }}
+              - Home</span>
+            <span class="[ monospace ] [ text-500 ]" aria-hidden="true">{{ site.name }}</span>
+          </a>
+          <!--<h2 class="font-monospace text-500">{{ site.name }}</h2>-->
+          <!--{{ site.shortDesc | markdownFilter | safe }}-->
+        </article>
         {% set ariaLabel = 'footer navigation' %}
         {% include "partials/components/nav.njk" %}
         <theme-toggle></theme-toggle>
@@ -17,7 +21,7 @@
     </div>
     {% if site.showThemeCredit %}
       <p class="[ site-foot__credit ] [ pad-top-900 ]">
-        Powered by the <a href="https://hylia.website" rel="external">Hylia Eleventy Starter Kit v{{ pkg.version }}</a>.
+        <a href="https://hylia.website" rel="external">Hylia Eleventy v{{ pkg.version }}</a>.
       </p>
     {% endif %}
   </div>

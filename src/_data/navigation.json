@@ -1,8 +1,13 @@
 {
   "items": [
     {
-      "text": "11ty-Hylia",
-      "url": "/",
+      "text": "What?",
+      "url": "/what",
+      "external": false
+    },
+    {
+      "text": "What",
+      "url": "/what-1",
       "external": false
     },
     {
@@ -10,14 +15,11 @@
       "url": "https://github.com/borisv/11ty-hylia",
       "external": true
     },
+
     {
-      "text": "What?",
-      "url": "/what/index.html",
+      "text": "Contact",
+      "url": "/contact",
       "external": false
-    },
-    {
-      "text": "What",
-      "url": "/what/index.html"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "showThemeCredit": true,
+  "showThemeCredit": false,
   "name": "11ty Hylia",
-  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
+  "shortDesc": "Hylia - a lightweight Eleventy starter kit",
   "url": "https://11ty-hylia.netllify.com",
   "authorEmail": "smplrtrn@gmail.com",
   "authorHandle": "@bvogeler",

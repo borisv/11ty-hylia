@@ -1,13 +1,13 @@
 .post {
   &__body {
-    --flow-space: #{get-size(800)};
+    --flow-space: #{get-size(700)};
 
     /**
-     * Generic HTML styles 
+     * Generic HTML styles
      */
     h2 + *,
     h3 + * {
-      --flow-space: #{get-size(500)};
+      --flow-space: #{get-size(300)};
     }
 
     h2,
@@ -19,11 +19,11 @@
     }
 
     a:not([class]) {
-      color: var(--color-dark);
+      color: var(--color-text);
       position: relative;
       display: inline-block;
       background: var(--color-theme-highlight);
-      padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+      padding: 0.2074rem 0.2074rem;
       text-decoration: none;
       word-break: break-word;
 
@@ -37,7 +37,7 @@
     code {
       font-size: 1.2em;
       color: var(--color-theme-primary);
-      font-weight: 600;
+      font-weight: 500;
       margin-left: 0.01ch;
       margin-right: 0.01ch;
     }
@@ -50,11 +50,11 @@
     }
 
     blockquote {
-      border-left: 0.4rem solid var(--color-theme-primary-glare);
+      border-left: 0.144rem solid var(--color-theme-primary);
       margin-left: 0;
       padding-left: get-size(500);
       font-style: italic;
-      font-size: get-size(600);
+      font-size: get-size(500);
 
       p {
         opacity: 0.85;
@@ -67,7 +67,7 @@
       margin-left: get-size(800);
 
       li + li {
-        margin-top: get-size(300);
+        margin-top: get-size(200);
       }
     }
 
@@ -96,7 +96,7 @@
     figure img,
     pre > code,
     .video-player {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 06px 30px rgba(0, 0, 0, 0.15);
     }
 
     figure img {
@@ -105,23 +105,23 @@
     }
 
     figcaption {
-      font-size: 0.8em;
+      font-size: 0.833em;
       font-style: italic;
       max-width: map-get($metrics, 'wrap-inner-max-width');
-      margin: 0.5rem auto 0 auto;
+      margin: 0.833rem auto 0 auto;
       padding: 0 get-size(500);
     }
 
     pre > code {
       display: block;
-      background: var(--color-dark);
+      background: var(--color-theme-code-bg);
       padding: get-size(700);
-      font-size: get-size(500);
+      font-size: get-size(400);
     }
   }
 
   &__footer {
-    background: var(--color-theme-highlight);
+    background: var(--color-theme-info);
 
     h2 {
       flex-shrink: 0;
