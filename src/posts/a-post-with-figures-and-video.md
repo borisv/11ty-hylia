@@ -11,7 +11,7 @@ A post to demonstrate how a blog post looks on Hylia. Content is all set in the 
 
 If you want to make an image bleed-out, add a title attribute to it and the front-end will automatically wrap it in a `<figure>` tag for you.
 
-![The top of a grey concrete building with a blue sky in the background](/images/double-red_w1440.jpg "Brutalism at its finest. Photo by Artificial Photography on Unsplash.")
+![The top of a grey concrete building with a blue sky in the background. Not true for now.](/images/double-red_w1440.jpg "Brutalism at its finest. When Markdown is doing too 'much'. Photo by smplrtrn.")
 
 You can also add videos to posts from YouTube or Vimeo (or wherever, really) and the front-end will also make those bleed-out for you too.
 

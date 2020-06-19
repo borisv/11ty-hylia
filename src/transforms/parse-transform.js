@@ -22,12 +22,12 @@ module.exports = function(value, outputPath) {
         image.setAttribute('loading', 'lazy');
 
         const file = image.getAttribute('src');
-        
+
         if (file.indexOf('http') < 0) {
           const dimensions = getSize('src' + file);
-          
+
           image.setAttribute('width', dimensions.width);
-          image.setAttribute('height', dimensions.height);;
+          image.setAttribute('height', dimensions.height);
         }
 
         // If an image has a title it means that the user added a caption
@@ -67,7 +67,7 @@ module.exports = function(value, outputPath) {
       });
     }
 
-    // Look for videos are wrap them in a container element
+    // Look for videos and wrap them in a container element
     if (articleEmbeds.length) {
       articleEmbeds.forEach(embed => {
         if (embed.hasAttribute('allowfullscreen')) {

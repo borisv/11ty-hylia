@@ -15,7 +15,11 @@
       "url": "https://github.com/borisv/11ty-hylia",
       "external": true
     },
-
+    {
+      "text": "RSS",
+      "url": "/feed.xml",
+      "external": false
+    },
     {
       "text": "Contact",
       "url": "/contact",
